@@ -3,7 +3,11 @@
 */
 let num1 = 10;
 let num2 = 7;
-console.log( num1 > num2 );
+if (num1 > num2) {
+  console.log("10 è più grande di 7!")
+} else {
+  ("non è più grande")
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -15,9 +19,13 @@ if (total !== 5) {
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
+let divisoCinque =  25 % 5
+if(divisoCinque === 0) {
+  console.log ("divisibile per 5")
+} else {
+ ("non divisibile per 5")
+}
 
-
-//intero1 Mod intero2 = intero3
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 4
@@ -32,7 +40,7 @@ if (total !== 5) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-let totalShoppingCart = 51;
+let totalShoppingCart = 20;
 
 if (totalShoppingCart <= 50) {
   console.log ("Sei a" , totalShoppingCart + 10 + "€ " + "Se raggiungi un ordine di 50€ la spedizione sarà gratuita!")
@@ -44,11 +52,13 @@ if (totalShoppingCart <= 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-let totalShoppingCart2 = 10;
+let totalShoppingCart2 = 65;
 let sconto = totalShoppingCart2 / 100 * 20;
+console.log(sconto)
 let totOrdine = totalShoppingCart2 - sconto
+console.log(totOrdine)
 
-if (totOrdine >= 50) {
+if (totOrdine <= 50) {
   console.log ("Sei a" , totOrdine + 10 + "€ " + "Se raggiungi un ordine di 50€ la spedizione sarà gratuita!")
 } else {
   console.log ("Puoi aderire alla nostra promozione!")
@@ -59,7 +69,10 @@ if (totOrdine >= 50) {
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let ciao1 = 5
+let ciao2 = 10
+let ciao3 = 15
+if (ciao1 < ciao3) {}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -71,7 +84,14 @@ if (totOrdine >= 50) {
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let divisione = 7
+let risulato = (divisione % 2)
+
+if(risulato > 0)  {
+  console.log("il numero è dispari")
+} else {
+  console.log("il numero è pari")
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -95,9 +115,9 @@ const me = {
   name: 'John',
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
-  city: "Toronto"
 }
 
+me.city = "toronto"
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
