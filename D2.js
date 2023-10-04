@@ -4,9 +4,9 @@
 let num1 = 10;
 let num2 = 7;
 if (num1 > num2) {
-  console.log("10 è più grande di 7!")
+  console.log("il primo numero è più grande del secondo!")
 } else {
-  ("non è più grande")
+  ("il secondo numero è più grande del primo!")
 }
 
 /* ESERCIZIO 2
@@ -77,8 +77,9 @@ if (ciao1 < ciao3) {}
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
+let esercizio8 = typeof 2;
+console.log(esercizio8)
 
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
